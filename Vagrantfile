@@ -2,6 +2,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "parallels/ubuntu-14.04"
   config.omnibus.chef_version = :latest
   config.landrush.enabled = false
+  config.berkshelf.enabled = true
 
   config.vm.provider "parallels" do |prl|
     prl.name = "chef-test"
