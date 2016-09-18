@@ -1,5 +1,5 @@
 default['sensu']['use_embedded_ruby'] = true
-default['uchiwa']['version'] = '0.14.2-1'
+default['uchiwa']['version'] = '0.18.1-1'
 default['uchiwa']['settings']['user'] = 'admin'
 default['uchiwa']['settings']['pass'] = 'eeGhae9boht3aoc'
 
