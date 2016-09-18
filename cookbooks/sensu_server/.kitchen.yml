@@ -29,7 +29,7 @@ suites:
       inspec_tests:
         - test/recipes
     attributes:
-      sensu-server: {
+      sensu_server: {
         influxdb_address: '192.168.1.6',
         influxdb_port: 8090
       }
