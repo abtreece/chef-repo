@@ -1,4 +1,4 @@
- specify resource without action for testing default action == :install
+# specify resource without action for testing default action == :install
 sensu_gem 'sensu-plugin'
 
 sensu_gem 'sensu-plugins-cpu-checks' do

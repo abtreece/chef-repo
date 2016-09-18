@@ -18,5 +18,5 @@ end
 
 include_recipe 'sensu::client_service'
 
-include_recipe 'sensu-client::plugins'
-include_recipe 'sensu-client::metrics'
+include_recipe 'sensu_client::plugins'
+include_recipe 'sensu_client::metrics'
