@@ -1,5 +1,5 @@
 default['sensu']['use_embedded_ruby'] = true
-default['sensu']['version'] = '0.26.0-1'
+default['sensu']['version'] = '0.26.1-1'
 default['sensu']['use_ssl'] = true
 default['sensu']['redis']['host'] = '127.0.0.1'
 default['sensu']['rabbitmq']['host'] = '127.0.0.1'
