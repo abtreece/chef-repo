@@ -12,7 +12,7 @@ default['uchiwa']['api'] = [
   {
     'name' => 'us-east-1',
     'host' => '127.0.0.1',
-    'port' => '4567',
+    'port' => 4567,
     'path' => '',
     'ssl' => false,
     'timeout' => 5
@@ -20,5 +20,5 @@ default['uchiwa']['api'] = [
 ]
 
 default['sensu_server']['extension_dir'] = '/etc/sensu/extensions'
-default['sensu_server']['influxdb_address'] = '127.0.0.1'
+default['sensu_server']['influxdb_address'] = '192.168.7.8'
 default['sensu_server']['influxdb_port'] = 8090
