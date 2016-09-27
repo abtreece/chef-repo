@@ -10,13 +10,21 @@ verifier:
 
 platforms:
   - name: ubuntu-16.04
-  - name: centos-7.2
+    driver:
+      provider: parallels
 
 suites:
   - name: default
+    driver:
+      customize:
+        memory: 512
+        cpus: 1
     run_list:
       - recipe[log_agent::default]
     verifier:
       inspec_tests:
         - test/recipes
     attributes:
+      td_agent: {
+        includes: true
+      }
