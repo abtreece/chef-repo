@@ -1,13 +1,12 @@
-td_agent_source 'test_in_tail' do
-  type 'tail'
+td_agent_source 'in_syslog' do
+  type 'syslog'
   tag 'syslog'
-  params(format: 'syslog',
-         path: '/var/log/syslog')
+  params(port: '42185')
 end
 
 td_agent_match 'test_gelf_match' do
   type 'copy'
-  tag 'syslog.*'
+  tag 'syslog.**'
   params( store: [{ type: 'gelf',
                    host: '192.168.7.6',
                    port: 12201,
