@@ -7,6 +7,8 @@
 include_recipe 'td-agent::default'
 include_recipe 'log_agent::plugins'
 include_recipe 'log_agent::sources'
+include_recipe 'rsyslog::client'
+
 
 group 'adm' do
   action :modify
