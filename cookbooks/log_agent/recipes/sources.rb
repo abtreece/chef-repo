@@ -4,7 +4,7 @@ td_agent_source 'in_syslog' do
   params(port: '42185')
 end
 
-td_agent_match 'test_gelf_match' do
+td_agent_match 'gelf_match' do
   type 'copy'
   tag 'syslog.**'
   params( store: [{ type: 'gelf',
